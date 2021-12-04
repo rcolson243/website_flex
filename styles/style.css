@@ -29,6 +29,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -82,6 +84,14 @@ body {
   background-color: #f1f1f1;
 }
 
+.titre_section {
+  text-align: center;
+  border-left: 3px solid #faff03;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .header_page {
   width: 100%;
   height: 70vh;
@@ -90,6 +100,7 @@ body {
   background-position: center;
   padding: 50px 100px;
   margin: 100px 0;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +110,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header_page .bloc_gauche p {
@@ -126,5 +139,46 @@ body {
   display: inline-block;
   width: auto;
   border-radius: 5px;
+}
+
+.header_page .box_jaune_2 p:hover {
+  background-color: #f1f1f1;
+}
+
+.section_valeur {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: #faff03 solid 1px;
+}
+
+.section_valeur .valeur-card {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+  border: 1px solid #faff03;
+}
+
+.section_valeur .valeur-card i {
+  font-size: 2rem;
+}
+
+.section_valeur .valeur-card:hover {
+  border: none;
+  background-color: #faff03;
+  color: #000000;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

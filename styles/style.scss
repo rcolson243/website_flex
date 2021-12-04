@@ -10,6 +10,7 @@ $font_size_text : 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin box_shadow {
@@ -91,6 +92,15 @@ body {
     }
 }
 
+.titre_section {
+    text-align: center;
+    border-left: 3px solid $color_jaune;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
 .header_page {
     width: 100%;
     height: 70vh;
@@ -99,11 +109,9 @@ body {
     background-position: center;
     padding: 50px 100px;
     margin: 100px 0;
+    margin-bottom: 50px;
     @include flex_package;
 
-    .bloc_gauche {
-        
-    }
     .bloc_gauche p {
         font-size: 2rem;
         color: $color_text;
@@ -131,13 +139,43 @@ body {
            display: inline-block;
            width: auto;
            border-radius: 5px;
+           &:hover {
+               background-color: #f1f1f1;
+           }
        }
     }
 
-
-
-
 }
+
+.section_valeur {
+    width: 100%;
+    height: auto;
+    @include flex_package;
+    flex-wrap: wrap;
+    border-bottom: #faff03 solid 1px;
+
+    .valeur-card {
+        margin: 10px;
+	    width: 300px;
+        height: 200px;
+	    padding: 30px;
+	    border: 1px solid #faff03;
+        // border-radius: 10px;
+
+        i {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            border: none;
+            background-color: $color_jaune;
+            color: #000000;
+            border-radius: 10px;
+        }
+    }
+}
+
+
 
 
 
