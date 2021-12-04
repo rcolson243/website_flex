@@ -1,0 +1,30 @@
+// les variables sont déclarées dans le fichier variables.scss
+$color_jaune : '#faff03';
+$color_text : '#f1f1f1'; 
+$color_text_2 : '#c5c5c5';
+
+// les mixins sont déclarées dans le fichier mixins.scss@
+@mixin  flex_package {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box_shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@mixin box {
+    width: 20%;
+    height: 200px;
+    background-color: $color_jaune;
+    border-radius: 10px;
+    margin: 0 auto;
+    @include box_shadow;                               
+}
+
+// body code 
+
+*, html ::before {
+    box-sizing: border-box;
+}
